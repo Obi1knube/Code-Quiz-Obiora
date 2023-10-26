@@ -23,7 +23,7 @@ var timerCount;
 // Array of words the user will guess
 var questions = ['What is the capital of Portugal?', 'What is the capital Kenya ?','In which continent is Ukrain? ']
 var answers = ['Oporto','Nairobi','Europe']
-var choices = [['Lagos','Oporto','Madeira'],['Nairobi','Pretoria','Accra']['Africa','Asia','Europe']] //array of arrays answer coices
+var choices = [['Lagos','Oporto','Madeira', 'Madrid'],['Nairobi','Pretoria','Accra','Luanda']['Africa','Asia','Europe','South America']] //array of arrays answer coices
 
 
 // The startGame function is called when the start button is clicked
@@ -39,7 +39,7 @@ function renderQuestions(){
   var choice1 = document.createElement('li')
   var choice2 = document.createElement('li')
   var choice3 = document.createElement('li')
-  var choice4 = document.createElement('li')
+ var choice4 = document.createElement('li')
   questionElement.textContent = questions[0]
   choice1.textContent = choices[0][0]
   choice2.textContent = choices[0][1]
@@ -81,3 +81,4 @@ startButton.addEventListener("click", startGame);
 
 // Event listener to allow the user to choose an option
 choicesElement.addEventListener('click', checkAnswer)
+// var answerEl =checkAnswer.target;
