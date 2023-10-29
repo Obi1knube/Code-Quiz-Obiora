@@ -51,13 +51,20 @@ function renderQuestions(){
 }
 
 function checkAnswer(event){
-  // when the user clicks on a choice, we should compare it to the correct answer and if it's right go on to the next question
   console.log(event.target.textContent)
-  // use an if statement to compare the uses choices with the correct answer
 
-  // if it's correct go on to the next questions, else tell them it's wrong
-}
+// when the user selects choice, we compare it to the correct answer, if wrong, clock continues ticking 
+      if (event.target.textContent !=answers[0]){
+      return;
+      
+// if it's correct go on to the next questions, 
+      }else{
 
+  alert ('Correct!! The answer is '+ answers[0]);
+  
+            
+  }
+ }
 // If timer is >0 keep going else stop the game and timer
 function startTimer() {
   // Sets timer
@@ -75,10 +82,8 @@ function startTimer() {
 
 
 
-
 // Attach event listener to start button to call startGame function on click
 startButton.addEventListener("click", startGame);
 
 // Event listener to allow the user to choose an option
-choicesElement.addEventListener('click', checkAnswer)
-// var answerEl =checkAnswer.target;
+choicesElement.addEventListener('click', checkAnswer);
