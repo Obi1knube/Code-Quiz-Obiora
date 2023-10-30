@@ -65,11 +65,11 @@ section {
 
 
 .timer {
-  height: 240px;
+  height: 24px;
   padding: 10px;
-  background: #13293d;
+ /** background: #13293d;
   color: #fff;
-  text-align: center;
+  text-align: center; **/
 }
 
 .timer-text {
@@ -98,11 +98,11 @@ section {
     font-size: 2em;
   }
 
-  .reset-button {
+  /**.reset-button {
     font-size: 12px;
     width: 20ox;
     
-  }
+  }**/
 
   .timer {
     height: 200px;
